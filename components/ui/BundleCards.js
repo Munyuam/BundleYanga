@@ -1,7 +1,9 @@
 import React from "react";
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
+import { getNetworkLogo } from "../../utils/networkLogoUtil";
 import { MaterialIcons } from "@expo/vector-icons";
-import getNetworkColor from "../utils/utils";
+import getNetworkColor from "../../utils/utils";
+
 
 export default function BundleCards() {
 
@@ -32,8 +34,8 @@ export default function BundleCards() {
           <View className="flex-row justify-between items-center mb-3">
             <View className="flex-row items-center space-x-3">
 
-              <View className=" p-3 rounded-full mx-2" style={{ backgroundColor: getNetworkColor(bundle.network), borderRadius: 30 }}>
-                <MaterialIcons name="wifi" size={24} color="white" />
+              <View className="w-12 h-12 bg-white rounded-full items-center justify-center shadow-sm border border-gray-200 p-2">
+                {getNetworkLogo(bundle.network)}
               </View>
 
               <View>

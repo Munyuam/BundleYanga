@@ -5,9 +5,9 @@ import { Feather } from '@react-native-vector-icons/feather';
 export default function BrowseBundleContainer() {
   return (
       <View className="bg-white px-6 pt-6 pb-4 shadow-sm">
-      <Text className="text-3xl text-black font-bold capitalize mb-4">
-        Browse Bundles
-      </Text>
+        <Text className="text-3xl text-black font-bold capitalize mb-4">
+          Browse Bundles
+        </Text>
 
       <View className="relative mb-4">
         <TextInput

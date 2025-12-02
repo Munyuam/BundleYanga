@@ -1,12 +1,14 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import SellBundleCard from "../components/ui/sellBundleCard";
 
 export default function SellScreen(){
     return (
-        <View>
-            <Text>
-                Sell Screen
-            </Text>
-        </View>
+        <SafeAreaView>
+           <ScrollView>
+             <SellBundleCard/> 
+            </ScrollView>   
+        </SafeAreaView>
     )
 }

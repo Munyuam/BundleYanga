@@ -1,7 +1,7 @@
 import { ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import BrowseBundleContainer from "../components/BrowseBundleContainer";
-import BundleCards from "../components/BundleCards";
+import BrowseBundleContainer from "../components/ui/BrowseBundleContainer";
+import BundleCards from "../components/ui/BundleCards";
 
 export default function Homescreen() {
   return (

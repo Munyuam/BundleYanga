@@ -1,12 +1,14 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { ScrollView, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import SearchCard from "../components/ui/SearchCard";
 
 export default function SearchScreen(){
     return (
-        <View>
-            <Text>
-                Search Screen
-            </Text>
-        </View>
+        <SafeAreaView>
+            <ScrollView>
+                <SearchCard/>
+            </ScrollView>
+        </SafeAreaView>
     )
 }

@@ -1,12 +1,17 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { ScrollView } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import WalletCard from "../components/ui/walletcard";
+import WalletTransactionCard from "../components/ui/transactionsCard";
+
 
 export default function WalletScreen(){
     return (
-        <View>
-            <Text>
-                WalletScreen
-            </Text>
-        </View>
+        <SafeAreaView>
+            <ScrollView>
+                <WalletCard/>
+                <WalletTransactionCard/>
+            </ScrollView>
+        </SafeAreaView>
     )
 }
