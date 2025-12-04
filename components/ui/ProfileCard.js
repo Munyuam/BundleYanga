@@ -4,7 +4,7 @@ import { Ionicons, Feather } from "@expo/vector-icons";
 
 export default function ProfileCard() {
   return (
-    <View className="bg-white rounded-sm shadow-lg">
+    <View className="bg-white shadow-4xl rounded-md">
       <Text className="text-3xl font-bold text-black px-6 pt-6">Profile</Text>
       <View className="flex-row px-6 pt-6 items-center">
         <View className="relative">

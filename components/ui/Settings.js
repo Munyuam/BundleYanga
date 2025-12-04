@@ -29,7 +29,9 @@ export default function Settings() {
       </View>
 
       <TouchableOpacity className="flex-row items-center justify-between bg-white rounded-2xl mx-4 mt-6 px-6 py-5 shadow-sm"
-        onPress={() => navigation.navigate('Login')}>
+        onPress={() => navigation.navigate('HomeTab', { screen: 'Auth' })}
+        activeOpacity={0.8}
+        >
         <View className="flex-row items-center space-x-4">
           <Feather name="log-out" size={24} color="#EF4444" />
           <Text className="text-lg font-medium text-red-500"> Logout</Text>
