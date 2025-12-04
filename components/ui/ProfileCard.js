@@ -7,7 +7,6 @@ export default function ProfileCard() {
     <View className="bg-white rounded-sm shadow-lg">
       <Text className="text-3xl font-bold text-black px-6 pt-6">Profile</Text>
       <View className="flex-row px-6 pt-6 items-center">
-        {/* Avatar */}
         <View className="relative">
           <View className="w-20 h-20 rounded-full bg-blue-500 justify-center items-center">
             <Text className="text-3xl font-bold text-white">JD</Text>

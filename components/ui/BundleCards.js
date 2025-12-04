@@ -1,11 +1,13 @@
 import React from "react";
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import { getNetworkLogo } from "../../utils/networkLogoUtil";
+import { useNavigation } from "@react-navigation/native";
 import { MaterialIcons } from "@expo/vector-icons";
 import getNetworkColor from "../../utils/utils";
 
 
 export default function BundleCards() {
+  const navigation = useNavigation()
 
   const bundles = [
     { id: 1, size: "2GB", network: "Airtel", price: "K1,500", seller: "John M.", initial: "J", duration: "7 days" },
@@ -39,8 +41,8 @@ export default function BundleCards() {
               </View>
 
               <View>
-                <Text className="text-lg font-bold text-gray-900">{bundle.size}</Text>
-                <Text className="text-gray-500 text-sm">{bundle.network}</Text>
+                <Text className="text-lg font-bold text-gray-900">  {bundle.size}</Text>
+                <Text className="text-gray-500 text-sm">  {bundle.network}</Text>
               </View>
             </View>
 
@@ -66,7 +68,10 @@ export default function BundleCards() {
             </TouchableOpacity>
           </View>
 
-          <TouchableOpacity className="bg-blue-600 py-3 rounded-lg">
+          <TouchableOpacity className="bg-blue-600 py-3 rounded-lg"
+            onPress={()=> navigation.navigate('BundleDetails')}
+            activeOpacity={0.8}
+          >
             <Text className="text-white font-bold text-center text-lg">Buy Now</Text>
           </TouchableOpacity>
 

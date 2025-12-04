@@ -18,7 +18,7 @@ export default function SearchCard() {
           <TextInput
             placeholder="Search bundles..."
             placeholderTextColor="#999"
-            className="ml-3 flex-1 text-lg text-gray-800 font-medium border-2 border-gray-100 rounded-full px-4"
+            className="ml-3 flex-1 text-lg text-gray-800 font-medium border-2 border-gray-100 rounded-md px-4"
             autoFocus={false}
           />
         </View>
@@ -30,7 +30,7 @@ export default function SearchCard() {
           {recentSearches.map((item, index) => (
             <TouchableOpacity
               key={index}
-              className="flex-row items-center bg-white rounded-full px-5 py-4 mt-2 shadow-sm"
+              className="flex-row items-center bg-white rounded-md px-5 py-4 mt-2 shadow-sm"
             >
               <Ionicons name="search" size={20} color="#bbb" />
               <Text className="ml-4 text-base text-gray-700 font-medium">{item}</Text>
@@ -43,7 +43,7 @@ export default function SearchCard() {
           {popularSearches.map((item, index) => (
             <TouchableOpacity
               key={index}
-              className="bg-white rounded-full px-5 py-3 shadow-sm border border-gray-200"
+              className="bg-white rounded-md px-5 py-3 shadow-sm border border-gray-200"
             >
               <Text className="text-base text-gray-700 font-medium">{item}</Text>
             </TouchableOpacity>

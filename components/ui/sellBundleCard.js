@@ -71,13 +71,6 @@ export default function SellBundleCard() {
         />
       </View>
 
-      <TouchableOpacity className="bg-blue-600 py-4 rounded-xl mb-6">
-        <Text className="text-white text-center font-bold text-lg">
-          Sell Bundle
-        </Text>
-      </TouchableOpacity>
-
-      {/* VALIDITY */}
       <Text className="font-semibold mb-3">Validity (Days)</Text>
 
       <View className="flex-row justify-between mb-6">
@@ -101,19 +94,24 @@ export default function SellBundleCard() {
 
       <TouchableOpacity
         onPress={pickImage}
-        className="bg-white border border-dashed border-gray-400 rounded-xl py-6 items-center"
+        className="bg-white border border-dashed border-gray-400  rounded-xl py-6 items-center"
       >
         {proof ? (
           <Image
             source={{ uri: proof }}
-            className="w-full h-40 rounded-xl"
+            className="w-full h-60 rounded-xl"
             resizeMode="cover"
           />
         ) : (
-          <Text className="text-gray-500">Tap to upload screenshot / proof</Text>
+          <Text className="text-gray-500 center items-center justify-center">Tap to upload screenshot / proof</Text>
         )}
       </TouchableOpacity>
 
+    <TouchableOpacity className="bg-green-600 py-4 rounded-xl mb-6 mt-8">
+        <Text className="text-white text-center font-bold text-lg">
+          Post Bundle for Sale
+        </Text>
+    </TouchableOpacity>
     </View>
   );
 }

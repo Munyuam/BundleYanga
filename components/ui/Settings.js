@@ -1,8 +1,11 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons, MaterialIcons, Feather } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Settings() {
+  const navigation = useNavigation()
+
   return (
     <View className="flex-1 bg-gray-50">
       <Text className="text-lg font-bold text-gray-800 px-6 pt-10 pb-6">Settings</Text>
@@ -25,7 +28,8 @@ export default function Settings() {
         </TouchableOpacity>
       </View>
 
-      <TouchableOpacity className="flex-row items-center justify-between bg-white rounded-2xl mx-4 mt-6 px-6 py-5 shadow-sm">
+      <TouchableOpacity className="flex-row items-center justify-between bg-white rounded-2xl mx-4 mt-6 px-6 py-5 shadow-sm"
+        onPress={() => navigation.navigate('Login')}>
         <View className="flex-row items-center space-x-4">
           <Feather name="log-out" size={24} color="#EF4444" />
           <Text className="text-lg font-medium text-red-500"> Logout</Text>
