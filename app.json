@@ -20,7 +20,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.mwizaler0.BandoYanga"
     },
     "web": {
       "bundler": "metro",
@@ -28,6 +29,11 @@
     },
     "plugins": [
       "expo-asset"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c3562871-6160-4519-9b83-5c2c2cce6e57"
+      }
+    }
   }
 }
