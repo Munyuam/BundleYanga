@@ -20,7 +20,7 @@ export default function Auth() {
       <View className="px-6 pt-12">
           
         <Text className="text-4xl font-bold text-center text-gray-900">
-          Heyyy You!
+          Login/Signup
         </Text>
         <Text className="text-lg text-gray-500 text-center mt-2 mb-10">
           Sign in to continue
